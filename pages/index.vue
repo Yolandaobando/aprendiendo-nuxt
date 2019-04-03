@@ -1,10 +1,9 @@
 <template>
   <div>
-    
-    <h1>HOLA{{msg}}</h1>
+  
+    <h1>HOLA {{msg}}</h1>
     <input type="text" v-model="msg">
-    <button @click="guardar"
-    class="btn btn-primary">Guardar</button>
+    <button @click="guardar" class="btn btn-primary">Guardar</button>
     <b-button variant="primary">Guardar</b-button>
     <table>
       <tr>
@@ -20,12 +19,12 @@
 </template>
 <script>
 import navbar from '../components/navbar'
-//import Contacto from ''
+
 export default {
-  components: { navbar },
+  components: {navbar},
   data() {
     return {
-      msg: "Yolanda Obando",
+      msg: "ANGIE",
       municipio: ["mocoa", "villagarzon", "caicedo"]
     };
   },
@@ -38,5 +37,5 @@ export default {
 
       }
   }
-};
+}
 </script>
